@@ -1,0 +1,51 @@
+.simplify-container {
+  @include flex(space-between, center, row);
+  padding: 5rem 10rem;
+  min-height: 35vh;
+  background: $primary_Bright_Blu
+    url("../images/bg-simplify-section-desktop.svg") no-repeat;
+  margin-top: 10rem;
+  background-position-x: 190px;
+  background-position-y: -130px;
+  position: relative;
+
+  @media screen and (max-width: 1045px) {
+    background: $primary_Bright_Blu
+      url("../images/bg-simplify-section-mobile.svg") no-repeat;
+    flex-direction: column;
+    text-align: center;
+    padding: 5rem 3rem;
+    gap: 30px;
+
+    br {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+    color: white;
+  }
+}
+
+.simplify-btn {
+  button {
+    border: none;
+    background: white;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-family: "Be Vietnam", sans-serif;
+    color: $primary_Bright_Red;
+    font-weight: bold;
+    overflow: hidden;
+    transition: background 0.8s ease-in;
+
+    &:hover {
+      background: linear-gradient(to right, #3b90ec, #20b1ff);
+      color: white;
+    }
+  }
+}

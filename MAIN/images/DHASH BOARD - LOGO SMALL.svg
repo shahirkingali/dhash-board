@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="84" viewBox="0 0 160 84">
+  <defs>
+    <clipPath id="clip-DHASH_BOARD_-_LOGO">
+      <rect width="160" height="84"/>
+    </clipPath>
+  </defs>
+  <g id="DHASH_BOARD_-_LOGO" data-name="DHASH BOARD - LOGO" clip-path="url(#clip-DHASH_BOARD_-_LOGO)">
+    <g id="Group_2" data-name="Group 2" transform="translate(62.723 17.193)">
+      <text id="DHASH_" data-name="DHASH " transform="translate(0.277 22.807)" font-size="24" font-family="Raleway"><tspan x="0" y="0">DHASH </tspan></text>
+      <text id="BOARD" transform="translate(0.277 44.807)" font-size="25" font-family="Raleway"><tspan x="0" y="0">BOARD</tspan></text>
+    </g>
+    <g id="Group_1" data-name="Group 1" transform="translate(10.187 10.741)">
+      <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(-0.187 0.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="21" height="19" stroke="none"/>
+        <rect x="1" y="1" width="19" height="17" fill="none"/>
+      </g>
+      <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(-0.187 20.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="21" height="10" stroke="none"/>
+        <rect x="1" y="1" width="19" height="8" fill="none"/>
+      </g>
+      <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(21.813 0.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="9" height="19" stroke="none"/>
+        <rect x="1" y="1" width="7" height="17" fill="none"/>
+      </g>
+      <g id="Rectangle_12" data-name="Rectangle 12" transform="translate(21.813 20.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="9" height="10" stroke="none"/>
+        <rect x="1" y="1" width="7" height="8" fill="none"/>
+      </g>
+      <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(31.813 6.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="8" height="24" stroke="none"/>
+        <rect x="1" y="1" width="6" height="22" fill="none"/>
+      </g>
+      <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(-0.187 31.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="18" height="19" stroke="none"/>
+        <rect x="1" y="1" width="16" height="17" fill="none"/>
+      </g>
+      <g id="Rectangle_8" data-name="Rectangle 8" transform="translate(18.813 31.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="25" height="19" stroke="none"/>
+        <rect x="1" y="1" width="23" height="17" fill="none"/>
+      </g>
+      <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(-0.187 51.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="30" height="13" stroke="none"/>
+        <rect x="1" y="1" width="28" height="11" fill="none"/>
+      </g>
+      <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(30.813 51.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="4" height="9" stroke="none"/>
+        <rect x="1" y="1" width="2" height="7" fill="none"/>
+      </g>
+      <g id="Rectangle_11" data-name="Rectangle 11" transform="translate(35.813 51.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="6" height="5" stroke="none"/>
+        <rect x="1" y="1" width="4" height="3" fill="none"/>
+      </g>
+      <g id="Rectangle_9" data-name="Rectangle 9" transform="translate(40.813 20.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="4" height="10" stroke="none"/>
+        <rect x="1" y="1" width="2" height="8" fill="none"/>
+      </g>
+      <g id="Rectangle_10" data-name="Rectangle 10" transform="translate(40.813 14.259)" fill="none" stroke="#00a7ff" stroke-width="2">
+        <rect width="4" height="5" stroke="none"/>
+        <rect x="1" y="1" width="2" height="3" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

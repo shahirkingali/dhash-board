@@ -1,0 +1,99 @@
+.testimonials {
+  overflow: hidden;
+  min-height: 80vh;
+}
+
+.testimonial-title {
+  @include flex(center, center, row);
+
+  h2 {
+    font-size: 4rem;
+    color: $primary_Dark_Blue;
+  }
+}
+
+.testimonial-cards {
+  @include flex(space-between, center, row);
+  padding-top: 10rem;
+  gap: 30px;
+}
+
+.card {
+  width: 600px;
+  background: $neutral_Vary_Light_Gray;
+  @include flex(center, center, column);
+  text-align: center;
+  padding: 3rem 3rem;
+
+  @media screen and (max-width: 1045px) {
+    width: 400px;
+  }
+
+  img {
+    width: 20%;
+    transform: translateY(-70%);
+  }
+
+  h4 {
+    color: $primary_Dark_Blue;
+    margin-top: -50px;
+    @media screen and (max-width: 1045px) {
+      margin-top: 0px;
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+    color: $neutral_Dark_Grayish_Blue;
+  }
+}
+
+#testimonial-slider {
+  padding-top: 5rem;
+}
+
+.testimonial-btn {
+  padding-top: 5rem;
+  @include flex(center, center, row);
+
+  button {
+    border: none;
+    background: $primary_Bright_Red;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    box-shadow: 5px 10px 20px rgba(242, 95, 58, 0.5);
+    cursor: pointer;
+    font-family: "Be Vietnam", sans-serif;
+    color: $neutral_Vary_Light_Gray;
+    font-weight: bold;
+    transition: background 0.8s ease-in;
+
+    &:hover {
+      background: linear-gradient(to right, #b1481f, #ff5020);
+      color: white;
+    }
+  }
+}
+
+.swiper-container {
+  width: 100%;
+  overflow: visible;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  @media screen and (max-width: 1045px) {
+    overflow: visible;
+  }
+}
+
+.swiper-wrapper {
+  overflow: visible;
+}
+
+.swiper-pagination-bullet {
+  background: $primary_Bright_Red;
+}

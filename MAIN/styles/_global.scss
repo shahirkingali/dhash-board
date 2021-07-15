@@ -1,0 +1,34 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary_Bright_Blu: hsl(211, 88%, 59%);
+$primary_Dark_Blue: hsl(228, 39%, 23%);
+$neutral_Dark_Grayish_Blue: hsl(227, 12%, 61%);
+$neutral_Very_Dark_Blue: hsl(233, 12%, 13%);
+$neutral_Very_Pale_Red: hsl(13, 100%, 96%);
+$neutral_Vary_Light_Gray: hsl(0, 0%, 98%);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Be Vietnam", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}

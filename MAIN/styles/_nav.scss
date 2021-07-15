@@ -1,0 +1,192 @@
+.header-container {
+  padding: 5rem 10rem;
+  background: url("../images/bg-tablet-pattern.svg") no-repeat right/contain;
+  background-position-x: 120%;
+  background-position-y: -100px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 1045px) {
+    padding: 5rem 3rem;
+    background-position-x: 100px;
+    background-position-y: -50px;
+  }
+}
+
+.header-container.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  z-index: -1;
+}
+
+nav {
+  min-height: 10vh;
+  @include flex(space-between, center, row);
+
+  .logo {
+    @include flex(center, center, row);
+    margin-top: 1.4rem;
+  }
+  .nav-links {
+    @include flex(space-between, center, row);
+    list-style: none;
+    width: 40%;
+    position: relative;
+
+    @media screen and (max-width: 1045px) {
+      position: absolute;
+      width: 90%;
+      height: 300px;
+      background: hsl(0, 0%, 100%);
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3),
+        0 15px 12px rgba(0, 0, 0, 0.22);
+      top: 23vh;
+      left: 50%;
+      @include flex(space-evenly, center, column);
+      transform: translate(-50%, 15%);
+      opacity: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $primary_Dark_Blue;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $neutral_Dark_Grayish_Blue;
+      }
+    }
+  }
+
+  .nav-links.show {
+    opacity: 1;
+    animation: anim 0.5s ease forwards;
+  }
+
+  .btn-get-started {
+    @media screen and (max-width: 1045px) {
+      display: none;
+    }
+
+    button {
+      border: none;
+      background: $primary_Bright_Blu;
+      padding: 1rem 3rem;
+      border-radius: 3rem;
+      box-shadow: 5px 10px 20px rgba(242, 95, 58, 0.5);
+      cursor: pointer;
+      font-family: "Be Vietnam", sans-serif;
+      color: $neutral_Vary_Light_Gray;
+      font-weight: bold;
+      transition: background 0.8s ease-in;
+
+      &:hover {
+        background: linear-gradient(to right, #b1481f, #ff5020);
+        color: white;
+      }
+    }
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: 1045px) {
+      display: block;
+    }
+  }
+}
+
+.intro-hero {
+  @include flex(center, center, row);
+  padding-top: 5rem;
+  @media screen and (max-width: 1045px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.intro-text {
+  flex: 1 0 50%;
+  @media screen and (max-width: 1045px) {
+    br {
+      display: none;
+    }
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 5rem;
+    color: $primary_Dark_Blue;
+    line-height: 5.5rem;
+  }
+
+  p {
+    padding-top: 3rem;
+    color: $neutral_Dark_Grayish_Blue;
+  }
+
+  button {
+    margin-top: 3rem;
+    border: none;
+    background: $primary_Bright_Blu;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    box-shadow: 5px 10px 20px rgba(58, 156, 242, 0.5);
+    cursor: pointer;
+    font-family: "Be Vietnam", sans-serif;
+    color: $neutral_Vary_Light_Gray;
+    font-weight: bold;
+    transition: background 0.8s ease-in;
+
+    &:hover {
+      background: linear-gradient(to right, #1f7eb1, #20c4ff);
+      color: white;
+    }
+  }
+}
+
+.intro-img {
+  flex: 1 0 50%;
+
+  @media screen and (max-width: 1045px) {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.bg-mobile {
+  display: none;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 1045px) {
+    display: block;
+    position: absolute;
+    top: 600px;
+    left: 230px;
+    right: -200px;
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

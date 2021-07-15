@@ -1,0 +1,198 @@
+.footer-container {
+  @include flex(space-between, center, row);
+  padding: 5rem 10rem;
+  background: $neutral_Very_Dark_Blue;
+  @media screen and (max-width: 1045px) {
+    flex-direction: column-reverse;
+    padding: 5rem 3rem;
+  }
+}
+
+.logo-social {
+  align-self: baseline;
+  @media screen and (max-width: 1045px) {
+    align-self: unset;
+    display: flex;
+    gap: 100px;
+    flex-direction: column-reverse;
+    position: relative;
+    top: -250px;
+
+    .logo-footer {
+      text-align: center;
+    }
+  }
+
+  .social {
+    padding-top: 10rem;
+    display: flex;
+    gap: 10px;
+    @media screen and (max-width: 1045px) {
+      gap: 30px;
+    }
+    .fab {
+      color: white;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $primary_Bright_Red;
+        box-shadow: 0px 5px 20px rgba(58, 141, 242, 0.8);
+      }
+    }
+  }
+}
+
+.site-map {
+  align-self: baseline;
+
+  @media screen and (max-width: 1045px) {
+    align-self: unset;
+    position: relative;
+    top: -200px;
+    left: -100px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $neutral_Vary_Light_Gray;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $primary_Bright_Red;
+      }
+    }
+  }
+}
+
+.join-manage {
+  align-self: baseline;
+
+  @media screen and (max-width: 1045px) {
+    align-self: unset;
+    position: relative;
+    top: -70px;
+    left: 100px;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      padding: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $neutral_Vary_Light_Gray;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: $primary_Bright_Red;
+      }
+    }
+  }
+}
+
+.contact-us {
+  align-self: baseline;
+  @media screen and (max-width: 1045px) {
+    align-self: unset;
+  }
+
+  .form-container {
+    position: relative;
+    @media screen and (max-width: 1045px) {
+      @include flex(center, center, row);
+    }
+    input[type="email"] {
+      border: none;
+      border-radius: 3rem;
+      padding: 1.5rem 3rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      border: none;
+      background: $primary_Bright_Red;
+      padding: 1.5rem 3rem;
+      border-radius: 3rem;
+      margin-left: 1rem;
+      color: $neutral_Vary_Light_Gray;
+      cursor: pointer;
+      font-family: "Be Vietnam", sans-serif;
+      font-weight: bold;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+
+      &:hover {
+        color: $neutral_Very_Dark_Blue;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 3rem;
+        transform: translate(-100%, 0);
+        transition: 0.2s transform ease-out;
+        will-change: transform;
+        background: white;
+        z-index: -1;
+      }
+
+      &:hover::after {
+        transform: translate(0, 0);
+      }
+    }
+
+    ::placeholder {
+      color: $neutral_Dark_Grayish_Blue;
+    }
+
+    &::after {
+      content: "Please insert a valid email";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50px;
+      left: 10px;
+      background: none;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: red;
+      opacity: 0;
+      transition: all 0.5s ease;
+    }
+
+    &.show::after {
+      opacity: 1;
+    }
+  }
+  .copyright {
+    padding-top: 9rem;
+    font-size: 1.4rem;
+    color: $neutral_Dark_Grayish_Blue;
+    float: right;
+
+    @media screen and (max-width: 1045px) {
+      position: relative;
+      top: 400px;
+      float: unset;
+      text-align: center;
+    }
+  }
+}
